@@ -1,4 +1,0 @@
-language: cpp
-os: linux
-script:
-    - make
