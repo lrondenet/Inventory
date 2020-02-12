@@ -4,6 +4,7 @@
 using std::cin;
 using std::cout;
 using std::string;
+using namespace std;
 
 int main()
 {
@@ -14,12 +15,13 @@ int main()
   {
     cout<<"\nMENU\n====\n(S)ell item\n(Q)uit\n>";
     cin>>choice;
-    if( choice == 'S' || choice == 's' )
-    {
+
+    if( choice == 'S' || choice == 's' ){
       stock.sell();
       cout<<stock<<"\n";
     }
   }while( choice != 'q' && choice != 'Q');
+
 
   return 0;
 }
